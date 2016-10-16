@@ -6,7 +6,7 @@ var  marginLeft = 0;
     var moveRight = function()
 { 
     marginLeft = marginLeft + 10;
-    krd.marginLeft.style = marginLeft + 'px';
+    img.marginLeft.style = marginLeft + 'px';
 };
 krd.onclick = function()
 {var interval = setInterval(moveRight,100);
