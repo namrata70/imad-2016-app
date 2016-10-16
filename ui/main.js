@@ -2,7 +2,12 @@ console.log('Loaded!');
 var element = document.getElementById ('main-text');
 element.innerHTML= "KRITIKA RAI DWIVEDI";
 var element = document.getElementById('krd');
+var  marginLeft = 0;
+    var moveRight = function()
+{ 
+    marginLeft = marginLeft + 10;
+    krd.marginLeft.style = marginLeft + 'px';
+};
 krd.onclick = function()
-{
-  krd.style.marginLeft = '100px'; 
+{var interval = setInterval(moveRight,100);
 };
