@@ -74,10 +74,9 @@ return htmlTemplate;
 });
 
 app.get('/:articleName', function (req, res) {
-   var articleNames = req.params.articleName;
+   var articleName = req.params.articleName;
     res.send(createTemplate(articles[articleName]));
 });
-var articleNames = req.params.articleNames;
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
