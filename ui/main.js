@@ -1,7 +1,7 @@
 console.log('Loaded!');
 var element = document.getElementById ('main-text');
 element.innerHTML= "KRITIKA RAI DWIVEDI";
-var element = document.getElementById('krd');
+var img = document.getElementById('krd');
 var  marginLeft = 0;
     var moveRight = function()
 { 
