@@ -20,11 +20,6 @@ body {
 .img-medium {
     height: 200px;
 }
-.personal{
-    font-size:20px;
-    color:black;
-    font-family:cursive;
-}
 .container
 {
     max-width: 800px;
