@@ -1,7 +1,12 @@
 body {
+    background-image:url('http://www.hdwallwide.com/wp-content/uploads/2015/10/coffee-laptop-writing-hd-pictures-hdwallwide-com.jpg');
     font-family: cursive;
     margin-top: 60px;
     position:relative;
+    -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
 }
 .icon-close {
   cursor: pointer;
