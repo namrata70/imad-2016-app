@@ -111,6 +111,9 @@ app.get('/submit-name', function(req, res){
   res.send(names);
     
 });
+app.get('/categories',function(req, res) {
+  res.sendFile(path.join(_dirname,'ui','categories.html')); 
+});
 
 app.get('/:articleName', function (req, res) {
    var articleName = req.params.articleName;
