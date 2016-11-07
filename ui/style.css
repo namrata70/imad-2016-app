@@ -5,6 +5,8 @@ body {
   cursor: pointer;
   padding-left: 10px;
   padding-top: 10px;
+  text-align:center;
+  color:black;
 }
 .center {
     text-align: center;
