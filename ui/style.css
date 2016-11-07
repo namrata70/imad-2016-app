@@ -1,6 +1,8 @@
 body {
     font-family: cursive;
-    margin-top: 60px;}
+    margin-top: 60px;
+    position:relative;
+}
 .icon-close {
   cursor: pointer;
   padding-left: 10px;
