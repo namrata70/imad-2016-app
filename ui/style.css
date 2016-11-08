@@ -8,6 +8,14 @@ body {
        -o-background-size: cover;
           background-size: cover;
 }
+img {
+	width:100px;
+	height:100px;
+}
+
+table, td {
+	border: 1px #70b8ff dashed;
+}
 
 .center {
     text-align: center;
