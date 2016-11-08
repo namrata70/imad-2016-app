@@ -112,7 +112,7 @@ app.get('/submit-name', function(req, res){
     
 });
 app.get('/categories',function(req, res) {
-  res.sendFile(path.join(_dirname,'ui','categories.html')); 
+  res.sendFile(path.join(__dirname, 'ui', 'categories.html')); 
 });
 
 app.get('/:articleName', function (req, res) {
