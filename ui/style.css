@@ -8,7 +8,7 @@ body {
        -o-background-size: cover;
           background-size: cover;
 }
-images {
+.images {
 	width:100px;
 	height:100px;
 }
