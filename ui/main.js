@@ -1,46 +1,28 @@
-//counter code
-var button = document.getElememtById('counter');
-button.onClick = function(){
-    //create a request object.
-    var request = XMLHttprequest();
-    
-    //capyure the response and store it to a variable.
-    request.onreadystatechanges =function(){
-        if (request.readyState === XMLHttpRequest.DONE)
-        {
-           //TAKE SOME ACTION 
-           if(request.status === 200)
-           { var counter =request.responseText;
-           var span = document.getElementById('count');
-           span.innerHTML = counter.toString();
-               
-           }
-        }
-        //not done yet.
-        
-    };
-    //make a request
-    request.open('GET', "http//:namrata70.imad.hasura-app.io/counter", true);
-    request.send(null);
-    };
-    //submit name
-    var nameInput = document.getElementById('name');
-    //var name = nameInput.value;
+
+    //submit username/password to login
     var submit = document.getElementById('submit_btn');
     submit.onclick = function(){
-        //make a request to server and send the names
-        
-        //capture a list of names and render it as a list.
-        var names = ['name1', 'name2', 'name3', 'name4'];
-        var list = '';
-        for (var i = 0; i<names.length; i++)
-        {
-            list+= '<li>' + names[i] + '</li>';
+        //create a request object
+        var request =new  createXMLHttpRequest();
+        request.onreadystatechange = function(){
+            if (request.readyState === XMLHttpRequest.DONE){
+                if(request.status === 200){
+                    console.log(' user logged in');
+                alert('logged in succesfully!');
+                }else if (request.status === 403){
+                    alert('username/password is incorrect');
+                    
+                }else if (request.status === 500){
+                    alert('something wrong with server, try again later!');
+                }
+            }
             
-        }
-        var ul = document.getElementById('namelist');
-        ul.innerHTML = list;
+        };
     };
-    request.open('GET', 'http//:namrata70.imad.hasura-app.io/submit-name?name=' + name, true);
-    request.send(null);
+    var username = document.getElementbyId('username').value;
+    var password = document.getElementById('password').value;
+    console.log(username);
+    console.log(password);
+    request.open('POST', 'http//:namrata70.imad.hasura-app.io/login', true);
+    request.send(JSON.stringify({username: username, password:password}));
     
