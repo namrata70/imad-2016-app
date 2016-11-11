@@ -7,7 +7,7 @@ var config = {
     database:'namrata70',
     host:'db.imad.hasura-app.io',
     port:'5432',
-    password:'process.env.DB_PASSWORD'
+    password:'db-namrata70-83189'
 };
 
 var app = express();
