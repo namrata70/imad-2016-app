@@ -33,13 +33,13 @@ var articles  =
     title:'article-two! kritika rai dwivedi',
     heading:'article-two',
     date:'oct 16,2016',
-    content:"this is the content for my second article."
+    content: "<p>this is the content for my second article.</p>"
 },
     'article-three':{
     title:'article-three! kritika rai dwivedi',
     heading:'article-three',
     date:'oct 16,2016',
-    content:"this is the content for my third article."
+    content:"<p>this is the content for my third article.</p>"
 }
 };
 function createTemplate(data)
@@ -116,7 +116,7 @@ app.get('/categories',function(req, res) {
 });
 
 app.get('/articles/:articleName', function (req, res) {
-   pool.query("SELECT * FROM article WHERE title = ' " + req.params.articleName + " ' ", function(err, result){
+   pool.query("SELECT * FROM article WHERE title = $1 ", [req.params.articleName], function(err, result){
     if(err){
         res.status(500).send(err.toString());
     }  else
