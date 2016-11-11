@@ -7,7 +7,7 @@ var config = {
     database:'namrata70',
     host:'db.imad.hasura-app.io',
     port:'5432',
-    password:'process.emv. DB_PASSWORD'
+    password:'process.env. DB_PASSWORD'
 };
 
 var app = express();
@@ -94,7 +94,7 @@ app.get('/test-db', function(req, res)
       {
           res.send(JSON.sringify(result));
       }
-  })  
+  }); 
 });
 var counter = 0;
 app.get('/counter', function(req, res){
