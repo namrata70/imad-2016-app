@@ -137,6 +137,7 @@ app.get('/logout',function(req, res){
 
 
 var pool = new Pool(config);
+
 app.get('/get-articles', function (req, res) {
    // make a select request
    // return a response with the results
@@ -181,7 +182,7 @@ app.post('/submit-comment/:articleName', function (req, res) {
                             if (err) {
                                 res.status(500).send(err.toString());
                             } else {
-                                res.status(200).send('Comment inserted!')
+                                res.status(200).send('Comment inserted!');
                             }
                         });
                 }
@@ -190,22 +191,6 @@ app.post('/submit-comment/:articleName', function (req, res) {
     } else {
         res.status(403).send('Only logged in users can comment');
     }
-});
-
-var counter = 0;
-app.get('/counter', function(req, res){
-  counter = counter + 1;
-  res.send(counter.toString());
-});
-var names = [];
-app.get('/submit-name', function(req, res){
-  //get the from request
-var name = req.query.names;
-names.push(name);
-  //JSON = javascript object notation
-  res.send(JSON.stringify(names));
-  res.send(names);
-    
 });
 app.get('/articles/:articleName', function (req, res) {
    pool.query("SELECT * FROM article WHERE title = $1 ", [req.params.articleName], function(err, result){
