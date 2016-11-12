@@ -1,20 +1,6 @@
 body {
-    background-image:url('http://www.hdwallwide.com/wp-content/uploads/2015/10/coffee-laptop-writing-hd-pictures-hdwallwide-com.jpg');
     font-family: cursive;
     margin-top: 60px;
-    position:relative;
-    -webkit-background-size: cover;
-     -moz-background-size: cover;
-       -o-background-size: cover;
-          background-size: cover;
-}
-.images {
-	width:100px;
-	height:100px;
-}
-
-table, td {
-	border: 1px #70b8ff dashed;
 }
 
 .center {
@@ -32,11 +18,29 @@ table, td {
 .img-medium {
     height: 200px;
 }
-.container
-{
+
+.container {
     max-width: 800px;
-    color: black;
-    font-family: Cursive;
+    margin: 0 auto;
+    color: #4a4a4a;
+    font-family: cursive;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.comment {
+    margin-left: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.commenter {
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+#comment_form {
+    margin-left: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
 }
