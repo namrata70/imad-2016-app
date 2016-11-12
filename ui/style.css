@@ -1,5 +1,5 @@
 body {
-    font-family: cursive;
+    font-family: sans-serif;
     margin-top: 60px;
 }
 
@@ -23,7 +23,7 @@ body {
     max-width: 800px;
     margin: 0 auto;
     color: #4a4a4a;
-    font-family: cursive;
+    font-family: sans-serif;
     padding-left: 20px;
     padding-right: 20px;
 }
