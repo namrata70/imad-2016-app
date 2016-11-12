@@ -21,7 +21,9 @@ app.use(session({
     secret: 'someRandomSecretValue',
     cookie: { maxAge: 1000 * 60 * 60 * 24 * 30}
 }));
-
+app.get('/favicon.ico', function(req, res){
+    res.sendFile(path.join(__dirname, 'ui', 'favicon.ico'));
+});
 function createTemplate (data) {
     var title = data.title;
     var date = data.date;
