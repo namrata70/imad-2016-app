@@ -8,7 +8,6 @@ body
 #profilepic
 { width: 200px;
 height: 200px;
-position:relative;
 background-image:url('http://wallpapersite.com/images/pages/pic_w/435.jpg');
 -webkit-background-size: cover;
      -moz-background-size: cover;
