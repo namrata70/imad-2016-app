@@ -7,7 +7,9 @@ background-image:url('http://www.shunvmall.com/data/out/35/47245078-book-wallpap
        -o-background-size: cover;
           background-size: cover;
 }
-
+h3{
+    color:black;
+}
 .center {
     text-align: center;
 }
