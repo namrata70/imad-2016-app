@@ -10,6 +10,10 @@ body
 height: 200px;
 position:relative;
 background-image:url('http://wallpapersite.com/images/pages/pic_w/435.jpg');
+-webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
 }
 h3
 {background-color: #9db39a;
