@@ -1,7 +1,7 @@
 body {
     font-family: sans-serif;
     margin-top: 60px;
-background-image:url('https://www.google.co.in/search?q=books+hd&espv=2&biw=1366&bih=662&source=lnms&tbm=isch&sa=X&ved=0ahUKEwi--4_5-K_QAhUMuI8KHRibCEcQ_AUIBigB#tbm=isch&q=books++hd+widescreen&imgrc=4ZgtrVfVy8BRIM%3A');
+background-image:url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/bg.png');
     -webkit-background-size: cover;
      -moz-background-size: cover;
        -o-background-size: cover;
