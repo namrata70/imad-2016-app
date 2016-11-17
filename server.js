@@ -232,7 +232,7 @@ app.get('/articles/:articleName', function (req, res) {
 app.get('/ui/:fileName', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', req.params.fileName));
 });
-app.get('/ui/:profile', function(req, res){
+app.get('/profile', function(req, res){
    res.sendFile(path.join(_dirname, 'ui', profile.html));
 });
 
