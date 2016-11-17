@@ -1,7 +1,7 @@
 
 function loadLoginForm () {
     var loginHtml = `
-        <h1 style = font-family: Cursive>Login/Register to unlock awesome features</h1>
+        <h1 style = font-family:Cursive>Login/Register to unlock awesome features</h1>
         <input type="text" id="username" placeholder="username" />
         <input type="password" id="password" placeholder="password" />
         <br/><br/>
