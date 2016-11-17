@@ -1,6 +1,9 @@
 body
 {background-color: #d2e2c8;
 }
+#cover{
+    width:100px;
+}
 #profilepic
 { width: 200px;
 height: 200px;
