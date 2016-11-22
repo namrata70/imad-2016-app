@@ -30,7 +30,7 @@ function createTemplate (data) {
     var htmlTemplate = `
     <html>
       <head>
-          <title style = color:black>
+          <title style = color:black, font-family:Cursive>
               ${title}
           </title>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
