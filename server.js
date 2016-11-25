@@ -69,6 +69,9 @@ function createTemplate (data) {
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
+app.get('/categories', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'categories.html'));
+});
 
 
 function hash (input, salt) {
