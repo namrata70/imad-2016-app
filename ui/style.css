@@ -40,11 +40,13 @@ h1{
     margin-left: 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid #ccc;
+    color:black;
 }
 
 .commenter {
     font-style: italic;
     font-size: 0.8em;
+    color:black;
 }
 
 #comment_form {
