@@ -39,20 +39,20 @@ function createTemplate (data) {
       <body>
           <div class="container">
               <div>
-                  <a style = font-family:Cursive href="/">Home</a>
+                  <a href="/">Home</a>
               </div>
               <hr/>
-              <h2 style = font-family:Cursive; color:black>
+              <h2>
                   ${heading}
               </h2>
               <div style = color:black>
                   ${date.toDateString()}
               </div>
-              <div style = color:black; font-family: Cursive>
+              <div>
                 ${content}
               </div>
               <hr/>
-              <h4 style = color:black; font-family:Cursive> Comments</h4>
+              <h4> Comments</h4>
               <div id="comment_form">
               </div>
               <div id="comments">
